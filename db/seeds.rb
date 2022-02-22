@@ -12,7 +12,7 @@ DatabaseCleaner.clean_with(:truncation)
 users = []
 puts "Users incrementation"
 10.times do |x|
-  user = User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Lorem.words, template_mail: "mail#{x}@yopmail")
+  user = User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, description: Faker::Lorem.words, email: "mail#{x}@yopmail", encrypted_password: "test")
   users << user
 end
 

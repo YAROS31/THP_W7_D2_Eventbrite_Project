@@ -1,7 +1,7 @@
 Rails.application.configure do
   
   # -- Action Mailer YR -- #
-  config.action_mailer.delivery_method = :letter_opener 
+  #config.action_mailer.delivery_method = :letter_opener 
   config.action_mailer.perform_deliveries = true
   
   
