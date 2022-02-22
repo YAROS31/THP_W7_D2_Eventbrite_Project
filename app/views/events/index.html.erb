@@ -1,0 +1,18 @@
+<h1>Welcome to the Eventbrite Project</h1>
+<p>Here are all our incoming events</p>
+
+<% @events.each do |event| %>
+  <div class="card-body text-dark">
+    <h5 class="card-title"><%= event.title %></h5>
+    <h5 class="card-title"><%= event.location %></h5>
+    <h5 class="card-title"><%= event.duration %></h5>
+    <p class="card-text"><%= event.description %></p>
+    <p class="card-text"><%= event.price %></p>
+    <p class="card-text"><%= event.start_date %></p>
+    <a href="event/<%=event.id%>" class="btn btn-primary">See the event</a>
+    </div>
+<% end %>
+
+<br>
+
+<%= link_to 'New Event', new_event_path %>
