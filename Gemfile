@@ -8,6 +8,7 @@ gem 'rails', '~> 5.2.6', '>= 5.2.6.2'
 gem 'faker'
 gem 'database_cleaner'
 gem 'dotenv-rails'
+gem 'devise'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
